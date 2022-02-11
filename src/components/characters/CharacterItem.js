@@ -23,7 +23,7 @@ const CharacterItem = ({ item }) => {
                             <strong>Status:</strong> {item.status}
                         </li>
                         <li>
-                            <strong>Occupation:</strong> {item.occupation}
+                            <strong>Occupation:</strong> {item.occupation.map((job, i) => (<p>{i+1}. {job} </p>))}
                         </li>
                     </ul>
                 </div>
